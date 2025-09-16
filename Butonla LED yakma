@@ -1,0 +1,16 @@
+int buton = 10;
+int led = 13;
+
+
+void setup()
+{
+  pinMode (buton, INPUT);
+  pinMode (led, OUTPUT);
+}
+
+
+void loop()
+{
+  int butonDurumu = digitalRead (buton);
+  digitalWrite (led, butonDurumu);
+}
